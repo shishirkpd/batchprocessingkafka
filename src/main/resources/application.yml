@@ -1,0 +1,10 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: consumer-group
+      auto-offset-reset: earliest
+      enable-auto-commit: false
+      max-poll-records: 500
+    producer:
+      topic-name: batch-processing
